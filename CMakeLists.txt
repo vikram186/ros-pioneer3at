@@ -7,6 +7,8 @@ find_package(catkin REQUIRED COMPONENTS roscpp sensor_msgs nav_msgs tf)
 ## Gazebo Standalone ##
 #######################
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 find_package(gazebo REQUIRED)
 
 include (FindPkgConfig)
@@ -60,18 +62,9 @@ target_link_libraries(gazebo_laserscan  ${catkin_LIBRARIES}
 #############
 ## Install ##
 #############
-install(PROGRAMS  scripts/init_amcl
+install(PROGRAMS  scripts/amcl_init
                   scripts/teleop_joy
                   scripts/gazebo_p3at
-                  scripts/proto/__init__.py
-                  scripts/proto/header.py
-                  scripts/proto/packet.py
-                  scripts/proto/pose.py
-                  scripts/proto/publish.py
-                  scripts/proto/quaternion.py
-                  scripts/proto/subscribe.py
-                  scripts/proto/time.py
-                  scripts/proto/vector3d.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 ## Mark executables and/or libraries for installation
