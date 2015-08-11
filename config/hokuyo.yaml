@@ -1,9 +1,9 @@
 
 
-ip_address:         192.168.0.10  # comment out this line to use serial port
-ip_port:            10940
+#ip_address:         192.168.0.10  # comment out this line to use serial port
+#ip_port:            10940
 
-serial_port:        /dev/ttyACM0
+serial_port:        /dev/laser
 serial_baud:        115200
 
 calibrate_time:     false
@@ -13,4 +13,4 @@ error_limit:        4
 
 
 # frame_id is only set via dimanic reconfigure?
-frame_id:           hokuyo
+frame_id:           Pioneer3AT/laserscan

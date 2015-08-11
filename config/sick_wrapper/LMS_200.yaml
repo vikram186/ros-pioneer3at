@@ -4,7 +4,7 @@
 # https://www.mysick.com/saqqara/im0012759.pdf  (Pg. 27)
 
 use_rep_117:  true
-port:         /dev/ttyUSB1
+port:         /dev/laser
 baud:         38400
 inverted:     false
 frame_id:     Pioneer3AT/laserscan

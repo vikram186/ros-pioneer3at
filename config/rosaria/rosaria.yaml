@@ -2,7 +2,7 @@
 # RosAria Driver Node
 #
 
-port:               /dev/ttyUSB0
+port:               /dev/robotbase
 debug_aria:         false
 aria_log_filename:  Aria.log
 
